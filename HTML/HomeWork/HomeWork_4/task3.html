@@ -5,22 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-    ol {
-        list-style: none;
-        counter-reset: li;
-      }
-      
-      li:before {
-        counter-increment: li;
-        content: counters(li, ".") ". ";
-      }
+    <style> ol {
+            list-style: none;
+            counter-reset: li;}
+            li {counter-increment: li;}
+            li:before {
+            content: counters(li, ".") ". ";}
     </style>
 </head>
 <body>
 <ol>
-    <li>Процессор</li>
-    <li>Память</li>
+    <li>
+        Процессор
+    </li>
+    <li>
+        Память
+    </li>
         <ol>
             <li>Оперативная память</li>
             <li>Долговременная память</li>
@@ -34,8 +34,10 @@
                             <li>Blue-ray Disc 3</li>
                         </ol>
                 </ol>
-        </ol>
-    <li>Устройства ввода</li>
+            </ol>
+    <li>
+        Устройства ввода
+    </li>
         <ol>
             <li>Клавиатура</li>
             <li>Мышь</li>
@@ -45,7 +47,9 @@
             <li>Микрофон</li>
             <li>Джойстик</li>
         </ol>
-    <li>Устойства вывода</li>
+    <li>
+        Устойства вывода
+    </li>
         <ol>
             <li>Монитор</li>
                 <ol>
