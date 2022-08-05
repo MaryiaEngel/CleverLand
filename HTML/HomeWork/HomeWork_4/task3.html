@@ -6,28 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style> ol {
-            list-style: none;
-            counter-reset: li;}
-            li {counter-increment: li;}
-            li:before {
-            content: counters(li, ".") ". ";}
+        list-style: none;
+        counter-reset: li;
+      }
+      
+      li:before {
+        counter-increment: li;
+        content: counters(li, ".") ". ";
+      }
     </style>
 </head>
 <body>
 <ol>
-    <li>
-        Процессор
-    </li>
-    <li>
-        Память
-    </li>
+    <li>Процессор</li>
+    <li>Память
         <ol>
             <li>Оперативная память</li>
-            <li>Долговременная память</li>
+            <li>Долговременная память
                 <ol>
                     <li>Жесткий магнитный диск</li>
                     <li>Флэш-память</li>
-                    <li>Оптические диски</li>
+                    <li>Оптические диски
                         <ol>
                             <li>CD</li>
                             <li>DVD</li>
@@ -35,9 +34,7 @@
                         </ol>
                 </ol>
         </ol>
-    <li>
-        Устройства ввода
-    </li>
+    <li>Устройства ввода
         <ol>
             <li>Клавиатура</li>
             <li>Мышь</li>
@@ -51,12 +48,12 @@
         Устойства вывода
     </li>
         <ol>
-            <li>Монитор</li>
+            <li>Монитор
                 <ol>
                     <li>Жидкокристаллический монитор</li>
                     <li>Монитор на электронно-лучевой трубке</li>
                 </ol>
-            <li>Принтер</li>
+            <li>Принтер
                 <ol>
                     <li>Струйный принтер</li>
                     <li>Лазерный принтер</li>
