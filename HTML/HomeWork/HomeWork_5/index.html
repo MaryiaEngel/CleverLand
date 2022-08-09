@@ -11,24 +11,29 @@
           color: #6E76F1;
         }
         div {
-      margin: 0 auto;
-       }
+            margin: 0 auto;
+        }
        .form-container {
-      width: 400px;
-      padding: 20px;
-      }
+           width: 400px;
+           padding: 20px;
+        }
     </style>    
 </head>
 <body>
     <h1 align="center">Cleverland</h1> 
     <h2 align="center">Формы. Элементы форм</h2>
+    <div class="form-container">
     <form>
         <fieldset>
             <legend>Данные пользователя</legend>
-            <p><label for="login">Логин: <em>*</em></label>
-            <input id="Login" name="Login" required></p>
-            <p><label for ="password">Пароль: <em>*</em></label>
-            <input type="password" id="password" name="Password" required ></p>
+            <p>
+                <label for="login">Логин: <em>*</em></label>
+                <input id="Login" name="Login" required>
+            </p>
+            <p>
+                <label for ="password">Пароль: <em>*</em></label>
+                <input type="password" id="password" name="Password" required >
+            </p>
             <input type="submit" value="Вход" id="auth">
         </fieldset>
         <br>
@@ -50,14 +55,21 @@
                     <option value="d5">Путешествие</option>
                 </select>
             </p>
-            <p> Просите что хотите <input name=""></p>
+            <p> Просите что хотите 
+                <input name="">
+            </p>
             <p> <input type="checkbox">
-                <label for="Текст" > Текст</label></p>
+                <label for="Текст" > Текст</label>
+            </p>
             <p><textarea id="Текст" rows="14" cols="35" name="Много текста">  
-                </textarea></p>
-            <p><input type="submit" value="Отправить"></p></p>
+                </textarea>
+            </p>
+            <p>
+                <input type="submit" value="Отправить">
+            </p>
         </fieldset>
     </form>
+    </div>
         
 </body>
 </html>
