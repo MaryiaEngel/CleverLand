@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+          font-size: 50px;
+          color: #6E76F1;
+        }
+        div {
+      margin: 0 auto;
+       }
+       .form-container {
+      width: 400px;
+      padding: 20px;
+      }
+    </style>    
+</head>
+<body>
+    <h1 align="center">Cleverland</h1> 
+    <h2 align="center">Формы. Элементы форм</h2>
+    <form>
+        <fieldset>
+            <legend>Данные пользователя</legend>
+            <p><label for="login">Логин: <em>*</em></label>
+            <input id="Login" name="Login" required></p>
+            <p><label for ="password">Пароль: <em>*</em></label>
+            <input type="password" id="password" name="Password" required ></p>
+            <input type="submit" value="Вход" id="auth">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Пожелания</legend>
+            <p>
+                <select name="select">
+                    <option selected value="s1">Орша</option>
+                    <option value="s2">Минск</option>
+                    <option value="s3">Витебск</option>
+                </select>
+            </p>
+            <p>
+                <select name="select" size="5" multiple>
+                    <option value="d1">Машина</option>
+                    <option value="d2">Квартира</option>
+                    <option value="d3">Свой дом</option>
+                    <option selected value="d4">Сад</option>
+                    <option value="d5">Путешествие</option>
+                </select>
+            </p>
+            <p> Просите что хотите <input name=""></p>
+            <p> <input id="Текст" type="checkbox">
+                <label for="Текст" > Текст</label></p>
+            <p><textarea  rows="14" cols="35" name="Много текста">  
+                </textarea></p>
+            <p><input type="submit" value="Отправить"></p></p>
+        </fieldset>
+    </form>
+        
+</body>
+</html>
