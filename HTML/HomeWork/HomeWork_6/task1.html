@@ -17,66 +17,66 @@
 </head>
 <body>
     <div class="form-container">
-    <form action="">
-        <fieldset>
-            <legend>Регистрационная форма пользователя</legend>
-            <p>
-                <label for="name">Имя: </label>
-                <input id="name" name="name" required>
-            </p>
-            <p>
-                <label for ="age">Укажите возраст:</label>
-                <input  list="ages" type="age" name="age" required >
-                <datalist id="ages">
-                    <option value="10-15 лет">
-                    <option value="15-20 лет">
-                    <option value="20-30 лет">
-                    <option value="30-40 лет">
-                    <option value="Старше 40">
-                </datalist>
-            </p>
-            <p> 
-                Укажите пол:
-                <input type="radio" name="M" value="M"> мужской
-                <input type="radio" name="F" value="F"> женский
-            </p>
-            <p>
-                <label for ="country">Страна проживания:</label>
-                <select name="select" >
-                    <option selected value="B">Беларусь</option>
-                    <option value="RB">Российская Федерация</option>
-                    <option value="Else">Другое государство</option>
+        <form action="">
+            <fieldset>
+                <legend>Регистрационная форма пользователя</legend>
+                <p>
+                    <label for="name">Имя: </label>
+                    <input id="name" name="name" required>
+                </p>
+                <p>
+                    <label for ="age">Укажите возраст:</label>
+                    <input  list="ages" type="age" name="age" required >
+                    <datalist id="ages">
+                        <option value="10-15 лет">
+                        <option value="15-20 лет">
+                        <option value="20-30 лет">
+                        <option value="30-40 лет">
+                        <option value="Старше 40">
+                    </datalist>
+                </p>
+                <p> 
+                    Укажите пол:
+                    <input type="radio" name="M" value="M"> мужской
+                    <input type="radio" name="F" value="F"> женский
+                </p>
+                <p>
+                    <label for ="country">Страна проживания:</label>
+                    <select name="select">
+                        <option selected value="B">Беларусь</option>
+                        <option value="RB">Российская Федерация</option>
+                        <option value="Else">Другое государство</option>
                     </select>
-            </p>
-            <p> 
-                Владение языками:
-                <input type="checkbox" name="Russian" value="M"> русский
-                <input type="checkbox" name="Belarusian" value="F"> белорусский
-                <input type="checkbox" name="English" value="F"> английский
-            </p>
+                </p>
+                <p> 
+                    Владение языками:
+                    <input type="checkbox" name="Russian" value="M"> русский
+                    <input type="checkbox" name="Belarusian" value="F"> белорусский
+                    <input type="checkbox" name="English" value="F"> английский
+                </p>
+                <p>
+                    Фото профиля:
+                    <button>Обзор</button>
+                    <small>Файл не выбран.</small>
+                </p>  
+                <p>
+                    Введите логин:
+                    <input name="login">
+                </p>
+                <p>
+                    Введите пароль:
+                    <input type="password" name="password">
+                </p>
+                <p>
+                    Повторите пароль:
+                    <input type="password" name="repeat_password">
+                </p>
+            </fieldset>
             <p>
-                Фото профиля:
-                <button>Обзор</button>
-                <small>Файл не выбран.</small>
-            </p>  
-            <p>
-                Введите логин: 
-                <input name="login">
+                <input type="reset" value="Сброс">
+                <input type="submit" value="Отправить">
             </p>
-            <p>
-                Введите пароль:
-                <input type="password" name="password">
-            </p>
-            <p>
-                Повторите пароль:
-                <input type="password" name="repeat_password">
-            </p> 
-        </fieldset>
-        <p>
-            <input type="reset" value="Сброс">
-            <input type="submit" value="Отправить">
-        </p>
-    </form>
+        </form>
     </div>    
 </body>
 </html>
