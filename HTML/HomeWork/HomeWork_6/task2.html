@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+        margin: 0 auto;
+        }
+        .form-container {
+        width: 500px;
+        padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <h3>Запись на курсы</h3>
+            <fieldset>
+                <p>Имя:</p>
+                <p>
+                    <input name="name" placeholder="Алексей">
+                </p>
+                <p>Язык программирования:</p>
+                <p>
+                    <input type="radio" name="prog" value="a1">С++
+                <br>
+                    <input type="radio" name="prog" value="a2">PHP
+                <br>
+                    <input type="radio" name="prog" value="a3">Python
+                </p>
+                <p>
+                    Дополнительная информация:
+                <br>
+                <textarea rows="7" cols="35" placeholder="Есть опыт программирования на C++"></textarea>
+                </p>
+                <p>Секретное слово:</p>
+                <p>
+                    <input type="password" name="password">
+                </p>
+                <p>
+                    <input type="submit" value="Отправить">
+                    <input type="reset" value="Очистить">
+                </p>
+            </fieldset>
+        </form>
+    </div>    
+</body>
+</html>
