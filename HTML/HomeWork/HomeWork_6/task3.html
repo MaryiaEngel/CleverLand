@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+        margin: 0 auto;
+        }
+        .form-container {
+        width: 450px;
+        padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form >
+            <fieldset>
+                <legend>Параметры автомобиля</legend>
+                <p>
+                    Марка автомобиля: 
+                    <input name="name">
+                </p>
+                <p>
+                    Объем двигателя, см 
+                    <sup>3</sup>
+                    <input name="volume" type="number" max="10000" placeholder="1900" >
+                </p>
+                    Область:
+                    <select name="select">
+                        <option selected value="s1">Брестская</option>
+                        <option value="s2">Минская</option>
+                        <option value="s3">Гомельская</option>
+                        <option value="s4">Витебская</option>
+                    </select>
+                </p>
+                <p>
+                    Тип КПП:
+                    <br>
+                    <input type="radio" value="a">Автомат
+                    <br>
+                    <input type="radio" value="a">Механика
+                    <br>
+                </p>
+                <p>
+                    Двигатель:
+                    <br>
+                    <input type="checkbox"  value="a1">Электро
+                    <br>
+                    <input type="checkbox"  value="a2">Дизель
+                    <br>
+                    <input type="checkbox"  value="a3">Бензин
+                    <br>
+                    <input type="checkbox"  value="a4">Пропан-Бутан
+                    <br>
+                    <input type="checkbox" value="a5">Метан
+                </p>
+                <p>
+                    Описание:
+                    <br>
+                    <textarea rows="10" cols="33" ></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Отправить">
+                    <input type="reset" value="Очистить">
+                </p>
+            </fieldset>
+        </form>
+    </div>    
+</body>
+</html>
