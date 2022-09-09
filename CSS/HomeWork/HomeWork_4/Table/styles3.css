@@ -1,0 +1,24 @@
+tr,th,td{
+    border-radius: 5px;
+    width:120px;
+    padding:15px;
+}
+thead tr{
+    background: linear-gradient(to top,  #8af004,#6ab623 );
+    color: white;
+}
+th:nth-child(1){
+    background: linear-gradient( 45deg,  #8af004,#6ab623 );
+    color: white;
+}
+tr{
+    background: #9ff768ce;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+table{
+    width: 650px;
+    border-collapse: separate;
+    border-spacing: 3px 3px;
+    empty-cells: hide;
+}
