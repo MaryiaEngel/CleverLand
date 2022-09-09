@@ -25,12 +25,12 @@
     width: 350px;
     border: 2px solid rgb(81, 239, 81);
     border-radius: 10px;
+    padding: 10px;
 }
 .block::before,
 .block::after {
     content: "";
     position: absolute;
-    left: 5%;
     bottom: -20px;
     border: 15px solid transparent;
     border-top: 15px solid rgb(193, 242, 193);
@@ -40,6 +40,7 @@
 .block::after{
     content: '';
     position: absolute;
+    width:30px;
     border-top: 15px solid rgb(193, 242, 193);
     bottom: -19px;
     top: 100%;
