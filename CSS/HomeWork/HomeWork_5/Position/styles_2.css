@@ -1,0 +1,16 @@
+.rule {
+    display: block;
+    background: rgb(103, 132, 52);
+    text-align: center;
+    width: 50%;
+    height: 400px;
+    padding: 50px;
+    position: relative;
+  }
+  #rule_1 {
+    background: green;
+    box-shadow: 10px 10px 2px darkred;
+    border-radius: 5px;
+    width: 50%;
+    padding: 25px;
+  }
