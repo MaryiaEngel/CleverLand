@@ -1,34 +1,27 @@
 .rule {
-    display: block;
-    background: rgba(186, 228, 162, 0.823);
-    width: 60%;
-    margin:100px auto;
-    height: 80px;
-    padding: auto;
-  }
-  #rule_1 {
-    color: rgb(5, 5, 99);
-    font-weight: bolder;
-    position: relative;
-    bottom: 20px;
-    left: 40px;
-  }
-  #rule_2 {
-    color: rgba(76, 108, 23, 0.886);
-    font-size:smaller;
-    position: relative;
-    bottom: 30px;
-    left: 40px;
-
-  }
-#rule_3{
+  display: block;
+  background: rgba(186, 228, 162, 0.823);
+  margin: 100px auto;
+  width: 800px;
   position: relative;
-  left: 10px;
-  top: 30px;
 }
-#rule_4{
-  position: relative;
-  right: -700px;
-  bottom: 70px;
-
+#rule_1 {
+  color: rgb(5, 5, 99);
+  font-weight: bolder;
+  padding: 10px 50px;
+}
+#rule_2 {
+  color: rgba(76, 108, 23, 0.886);
+  font-size: smaller;
+  padding: 0 50px 10px;
+}
+#rule_3 {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+}
+#rule_4 {
+  position: absolute;
+  right: 20px;
+  top: 15px;
 }
