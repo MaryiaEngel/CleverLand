@@ -8,7 +8,7 @@
     <style>
       .rule {
         display: flex;
-        justify-content: flex-start; /* flex-end*/
+        justify-content: flex-start;
         background-color: cornflowerblue;
         color: white;
         border: 1px solid blue;
@@ -23,10 +23,33 @@
         background-color: white;
         color: cornflowerblue;
       }
+      .rule_2 {
+        display: flex;
+        justify-content: flex-end;
+        background-color: cornflowerblue;
+        color: white;
+        border: 1px solid blue;
+        width: 600px;
+        margin: 100px auto;
+      }
+      .rule_2 > div {
+        line-height: 35px;
+        padding: 0 10px;
+      }
+      .rule_2 > div:hover {
+        background-color: white;
+        color: cornflowerblue;
+      }
     </style>
   </head>
   <body>
     <div class="rule">
+      <div>Главная</div>
+      <div>О компании</div>
+      <div>Информация</div>
+      <div>О нас</div>
+    </div>
+    <div class="rule_2">
       <div>Главная</div>
       <div>О компании</div>
       <div>Информация</div>
