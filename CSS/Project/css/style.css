@@ -159,3 +159,25 @@
     text-align: center;
     text-transform: uppercase;
 }
+.waiting{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    width: 100%;
+    margin-top: 45px;
+}
+.waiting .waitng_img{
+    width: 342px;
+    height: 201px;
+}
+.waiting .waiting_text{
+    color: #4A4A4A;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    padding-top: 26px ;
+    flex: 1 1 auto;
+}
