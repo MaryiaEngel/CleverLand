@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task_2</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 100px auto;
+      }
+      div {
+        margin: 20px;
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+      }
+      .first:hover {
+        transform-origin: 50px 40px;
+        transform: rotate(45deg) translate(30px, -55px);
+      }
+      .second:hover {
+        transform-origin: bottom left;
+        transform: rotate(45deg);
+      }
+      .third:hover {
+        transform: rotate(45deg);
+      }
+      .forth:hover {
+        transform-origin: top right;
+        transform: rotate(45deg) translateX(100px);
+      }
+      .fifth:hover {
+        transform-origin: 102px 100px;
+        transform: scale(2, 2);
+      }
+      .sixth:hover {
+        transform-origin: 100px 100px;
+        transform: skew(45deg, 0deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <div class="forth"></div>
+    <div class="fifth"></div>
+    <div class="sixth"></div>
+  </body>
+</html>
