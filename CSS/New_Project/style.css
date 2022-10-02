@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .head {
+    background: url('./img/Rectangle 6.jpg') center center/cover no-repeat;
+    height: 1000px;
+  }
+  .container {
+    width: 1920px;
+    margin: 0 auto;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 500px;
+  }
+  .img{
+    width: 223px;
+    height: 60px;
+    margin-top:30px;
+  }
+  .navigation {
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7px;
+    line-height: 27px;
+    text-decoration: none;
+    margin-top: 15px;
+  }
+  .single{
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 310px;
+    margin-left: 405px;
+  }
+  .song{
+      color: transparent;
+       -webkit-text-stroke: 1px #FFFFFF;
+      text-stroke: 1px  #FFFFFF;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 38px;
+      margin-left: 405px;
+      margin-top: 10px;
+  }
+  .img-player{
+    margin-left: 405px;
+    margin-top:50px;
+    margin-right: 45px;
+  }
+  input[type='range'] { 
+    overflow: hidden; 
+    width: 817px; 
+    -webkit-appearance: none;
+    background-color: #FFFFFF;
+    margin-right:47px;
+  } 
+  input[type='range']::-webkit-slider-runnable-track{ 
+    height: 2px; 
+    -webkit-appearance: none; 
+    color: #7A66CC; 
+  }
+  input[type='range']::-webkit-slider-thumb { 
+    width: 5px; 
+    -webkit-appearance:none; 
+    height: 30px; 
+    background:#7A66CC; 
+    box-shadow:-887px 0 0 887px #7A66CC; 
+  }
+  input[type="range"]::-moz-range-progress { 
+    background-color: #7A66CC; 
+  }
+  input[type="range"]::-moz-range-track { 
+    background-color: #FFFFFF; 
+  }
+  input[type="range"]::-ms-fill-lower { 
+    background-color: #7A66CC; 
+  }
+  input[type="range"]::-ms-fill-upper { 
+    background-color: #FFFFFF;
+  } 
+  .time{ 
+    color:#FFFFFF; 
+    font-family: 'Poppins'; 
+    font-style: normal; font-weight: 500;
+    font-size: 8px; 
+  }
+  .article {
+    background-color: #1c1b21;
+    min-height: 330px;
+  }  
+  .article .article_wrapper {
+    display: flex;
+    width: 1110px;
+    justify-content: space-between;
+    position: relative;
+  }
+  .article .article_wrapper .article_item {
+    width: 350px;
+    text-align: center;
+  }
+  .article .article_wrapper .article_item .article_img {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    margin: -150px 225px;
+  } 
+  .article .article_wrapper .article_item .purple{
+    width: 350px;
+    height: 90px;
+    position: absolute;
+    background: #7A66CC;
+    opacity: 0.7;
+    border-radius: 20px 0px;
+    margin: 60px 400px;
+    text-align: left;
+    padding: 21px 20px;
+  }
+  .article .article_wrapper .article_item .article_descr {
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5px;
+  }
