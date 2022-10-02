@@ -44,7 +44,6 @@
   .song{
       color: transparent;
        -webkit-text-stroke: 1px #FFFFFF;
-      text-stroke: 1px  #FFFFFF;
       font-family: 'Poppins';
       font-style: normal;
       font-weight: 700;
