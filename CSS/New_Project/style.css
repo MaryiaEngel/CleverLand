@@ -4,6 +4,7 @@
   padding-top: 30px;
 }
 .container {
+  position: relative;
   width: 1110px;
   margin: 0 auto;
 }
@@ -89,4 +90,66 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+}
+.lights{
+  height: 645px;
+  background-color: #1c1b21;
+}
+.bright{
+  color: #FFFFFF;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+}
+.bright::before{
+  content: url(./details/Group\ 31.png);
+  margin-right: 30px;
+}
+.lights .lights-descr{
+  width: 540px;
+  height: 312px;
+  color: #FFFFFF;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 60px 125px 61px 0;
+}
+.bottom{
+  display: grid;
+  width: 540px;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 40px;
+  row-gap: 30px;
+}
+.bottom-descr{
+  color: #FFFFFF;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+  padding: 0px 0px 0px 50px;
+  min-width: 146px;
+  min-height: 27px;
+}
+.bottom-descr::before{
+  content: url(./details/Rectangle\ 12.png);
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+}
+.container .lights-img{
+  position: absolute;
+  top: 66px;
+  left: 665px;
+
 }
