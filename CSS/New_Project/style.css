@@ -16,6 +16,7 @@
 .nav .img {
   width: 223px;
   height: 60px;
+  margin-left: 95px;
 }
 .nav .navigation-wrapper {
   display: flex;
@@ -151,5 +152,8 @@
   position: absolute;
   top: 66px;
   left: 665px;
-
+}
+.mtv{
+  height: 665px;
+  background-color: #1c1b21;
 }
