@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task_1</title>
+    <style>
+      .task {
+        width: 50px;
+        height: 50px;
+        border: 1px solid red;
+        animation-name: myAnimation;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: 3;
+      }
+      @keyframes myAnimation {
+        from {
+          transform: translate(0, 0);
+        }
+        to {
+          transform: translateX(500px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="task"></div>
+  </body>
+</html>

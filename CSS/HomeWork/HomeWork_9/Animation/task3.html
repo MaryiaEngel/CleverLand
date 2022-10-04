@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task_3</title>
+    <style>
+      .task {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        animation-name: myAnimation;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      @keyframes myAnimation {
+        from {
+          border: 1px solid red;
+        }
+        50% {
+          background-color: lightcoral;
+          border: 1px solid red;
+        }
+        to {
+          background-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="task"></div>
+  </body>
+</html>
