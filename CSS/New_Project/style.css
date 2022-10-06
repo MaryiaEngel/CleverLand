@@ -1,3 +1,7 @@
+* {
+  font-family: 'Poppins';
+  font-weight: 700;
+}
 .head {
   background: url('./img/Rectangle 6.jpg') center center/cover no-repeat;
   height: 1000px;
@@ -25,7 +29,6 @@
 
 .navigation {
   color: #ffffff;
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -33,9 +36,7 @@
   text-decoration: none;
 }
 .single {
-  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 700;
   font-size: 48px;
   line-height: 72px;
   margin-top: 322px;
@@ -44,9 +45,7 @@
 .song {
   color: transparent;
   -webkit-text-stroke: 1px #ffffff;
-  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 700;
   font-size: 100px;
   line-height: 150px;
   margin-top: 25px;
@@ -76,8 +75,7 @@
   width: 350px;
   min-height: 90px;
   position: absolute;
-  background: #7a66cc;
-  opacity: 0.7;
+  background: rgba(122, 102, 204, 0.7);
   border-radius: 20px 0px;
   text-align: left;
   padding: 21px 20px;
@@ -86,7 +84,6 @@
 }
 .article .article_wrapper .article_item .article_descr {
   color: #ffffff;
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -98,9 +95,7 @@
 }
 .bright{
   color: #FFFFFF;
-  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 700;
   font-size: 48px;
   line-height: 72px;
 }
@@ -113,7 +108,6 @@
   min-height: 312px;
   color: #FFFFFF;
   opacity: 0.7;
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -129,7 +123,6 @@
 }
 .bottom-descr{
   color: #FFFFFF;
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -167,7 +160,6 @@
 .mtv-descr{
   position: relative;
   color: #FFFFFF;
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -191,9 +183,7 @@
 }
 .mtv-web{
   color: #7A66CC;
-  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: 27px;
   margin-top: 25px;
@@ -240,9 +230,7 @@
 }
 .last{
   color: #FFFFFF;
-  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 700;
   font-size: 48px;
   line-height: 72px;
 }
@@ -257,16 +245,13 @@
 .number{
   color: #FFFFFF;
   opacity: 0.5;
-  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   margin-right:20px;
 }
 .chosen{
   color: #7A66CC;
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -276,7 +261,6 @@
 li{
   margin-left: 0px;
   color: #FFFFFF;
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -291,7 +275,6 @@ li{
 }
 .track-icons{
   color: #FFFFFF;
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -321,18 +304,16 @@ li{
   height: 500px;
   row-gap: 30px ;
 }
-.vegas-descr{
-  position: absolute;
+.inside-box .vegas-descr{
+  background: url(./img/Rectangle\ 25.png) center / contain no-repeat;
+  width: 540px;
+  height: 235px;
   text-align: center;
   color: #7A66CC;
-  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 700;
   font-size: 24px;
-  line-height: 36px;
-  left: 397px;
-  bottom: 100.37px;
-}
+  padding-top: 100px;
+  }
 .concert{
   background-color: #1c1b21;
   padding-bottom: 180px;
@@ -350,9 +331,7 @@ li{
 .first .state,.second .state2,.third .state3{
   color: #FFFFFF;
   opacity: 0.5;
-  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: 27px;
   margin-top:30px;
@@ -360,7 +339,6 @@ li{
 }
 .place,.place2,.place3{
   color: #FFFFFF;
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -372,9 +350,7 @@ li{
   color: #FFFFFF;
   opacity: 0.5;
   text-transform: uppercase;
-  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   margin-top:46px;
@@ -387,9 +363,7 @@ li{
   height: 60px;
   color: #FFFFFF;
   text-transform: uppercase;
-  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
@@ -425,7 +399,6 @@ li{
 }
 .info_1{
   color: #FFFFFF;
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -435,7 +408,6 @@ li{
 }
 .info_2{
   color: #FFFFFF;
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -456,7 +428,6 @@ li{
   opacity: 0.5;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
