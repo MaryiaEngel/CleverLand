@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task_5</title>
+    <style>
+      .task {
+        width: 100px;
+        height: 50px;
+        border: 1px solid red;
+        animation-name: myAnimation;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+      }
+      .task:hover {
+        animation-play-state: running;
+      }
+      @keyframes myAnimation {
+        from {
+          width: 100px;
+          height: 50px;
+        }
+        50% {
+          width: 100%;
+          height: 50px;
+        }
+        to {
+          width: 100px;
+          height: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="task"></div>
+  </body>
+</html>

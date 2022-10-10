@@ -1,0 +1,39 @@
+ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+  ul li {
+    list-style-type: none;
+  }
+  .i1,.i2,.i3,.i4,.i5,.i6,.i7,.i8,.i9 {
+    transition: all 1s ease;
+  }
+  .i1:hover {
+    filter: blur(3px);
+  }
+  .i2:hover {
+    filter: brightness(40%);
+  }
+  .i3:hover {
+    filter: contrast(10%);
+  }
+  .i4:hover {
+    filter: grayscale(.75);
+  }
+  .i5:hover {
+    filter: saturate(300%);
+  }
+  .i6:hover {
+    filter: sepia(100%);
+  }
+  .i7:hover {
+    filter: hue-rotate(270deg);
+  }
+  .i8:hover {
+    filter: invert(100%);
+  }
+  .i9:hover {
+    filter: opacity(50%);
+  }
