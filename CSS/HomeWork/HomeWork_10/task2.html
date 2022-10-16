@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        width: 900px;
+        height: 900px;
+        margin: 100px auto;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+          "one one two"
+          "three four four"
+          "three five six";
+      }
+      .one {
+        grid-area: one;
+        background-color: aquamarine;
+        color: white;
+        line-height: 300px;
+        font-size: 60px;
+        text-align: center;
+      }
+      .two {
+        grid-area: two;
+        background-color: #fff380;
+        color: white;
+        line-height: 300px;
+        font-size: 60px;
+        text-align: center;
+      }
+      .three {
+        grid-area: three;
+        background-color: #80fff2;
+        color: white;
+        line-height: 600px;
+        font-size: 60px;
+        text-align: center;
+      }
+      .four {
+        grid-area: four;
+        background-color: violet;
+        color: white;
+        line-height: 300px;
+        font-size: 60px;
+        text-align: center;
+      }
+      .five {
+        grid-area: five;
+        background-color: lightgreen;
+        color: white;
+        line-height: 300px;
+        font-size: 60px;
+        text-align: center;
+      }
+      .six {
+        grid-area: six;
+        background-color: orange;
+        color: white;
+        line-height: 300px;
+        font-size: 60px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+      <div class="five">5</div>
+      <div class="six">6</div>
+    </div>
+  </body>
+</html>
