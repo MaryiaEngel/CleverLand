@@ -2,4 +2,4 @@
 
 let name = prompt("What is your name?");
 alert(`${name}`)
-result = confirm(`Your name, ${name}, correct?`);
+alert(confirm(`Your name, ${name}, correct?`));
