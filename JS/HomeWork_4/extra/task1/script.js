@@ -33,4 +33,6 @@ switch(number){
     case 9:
         console.log(`Nine`);
         break;
+    default:
+        console.log("Error,wrong input")
     }

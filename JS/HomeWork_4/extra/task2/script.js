@@ -23,5 +23,5 @@ else if(N == 5){
     console.log(`Это ${n} метров`)
 }
 else{
-    console.log("Enter unit number,please")
+    console.log("Error, you entered the wrong number or not a number")
 }

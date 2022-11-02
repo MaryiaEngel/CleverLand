@@ -127,5 +127,4 @@ switch ((question % 100) % 10) {
     default:
         units = '';
 }
-
 alert(`${hundreds} ${dozens || subDozens} ${subDozens ? '' : units}`)
