@@ -5,7 +5,13 @@
 // Квадрат 2 = 4
 // и т.д. 
 
-'use strict';
+//'use strict';
 
-for(let i = 1; i < 10; i++){
-    console.log(`Квадрат ${i} = ${i*i}`)}
+//for(let i = 1; i < 10; i++){
+//    console.log(`Квадрат ${i} = ${i*i}`)}
+
+'use strict';
+let i = 1;
+    while(i<10){
+    console.log('Квадрат ' + i + ' = ' + i*i);
+    i++;}
