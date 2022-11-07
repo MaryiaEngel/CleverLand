@@ -22,4 +22,7 @@ while(n%1 == 0){
         console.log("4")
         console.log(Math.floor(n/1000) + Math.floor((n%1000)/100) + Math.floor((n%100)/10) + (n%10));
         console.log(`${(n%10)}${Math.floor((n%100)/10)}${Math.floor((n%1000)/100)}${Math.floor(n/1000)}`)}
+    else{
+        console.log("Error,wrong input!")
+    }
         break}
