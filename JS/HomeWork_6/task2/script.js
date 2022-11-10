@@ -1,6 +1,6 @@
 'use strict';
 function checkNumber(n){
-    if(n > 10){
+    if(n >= 10){
         return n*n;
     }
     else if (n <= 7){
