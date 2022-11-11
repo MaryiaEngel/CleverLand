@@ -6,3 +6,4 @@ function calcNumbers(n){
     return n;}
 let n = prompt('Введите любое число', '');
 console.log(calcNumbers(n));
+
