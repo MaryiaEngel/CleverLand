@@ -1,20 +1,18 @@
 'use strict';
 
-function calcPower(a,b){
-    return(Math.pow(a,b));
+let price = prompt("Введите стоимость:");
+let payment = prompt("Введите cумму оплаты:");
+function calc(difference){
+    return price - payment;}
+function printResult(){
+    if (calc(difference) == 0){
+        return("Спасибо за покупку!");
+    }
+    else if (calc(difference) < 0){
+        return "Ваша сдача: " + (calc(difference)*-1);
+    }
+    else if(calc(difference) > 0){
+        return("Недостаточная сумма для оплаты!");
+    }
 }
-let a = prompt("Введите число");
-let b = prompt("Введите степень");
-alert(calcPower(a,b));
-
-//'use strict';
-
-//let c = 1;
-//function calcPower(a,b){
-//    for( i=1; i <= b; i++){
-//        c *= i;
-//    }
-//    return(Math.pow(a,b));}
-//let a = prompt("Введите число");
-//let b = prompt("Введите степень");
-//alert(calcPower(a,b));
+console.log(printResult());
