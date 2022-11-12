@@ -2,17 +2,16 @@
 
 let price = prompt("Введите стоимость:");
 let payment = prompt("Введите cумму оплаты:");
-function calc(difference){
+function calc(price,payment){
     return price - payment;}
 function printResult(){
-    if (calc(difference) == 0){
+    if (calc(price,payment) == 0){
         return("Спасибо за покупку!");
     }
-    else if (calc(difference) < 0){
-        return "Ваша сдача: " + (calc(difference)*-1);
+    else if (calc(price,payment) < 0){
+        return "Ваша сдача: " + (calc(price,payment)*-1);
     }
-    else if(calc(difference) > 0){
+    else if(calc(price,payment) > 0){
         return("Недостаточная сумма для оплаты!");
-    }
-}
+    }}
 console.log(printResult());
