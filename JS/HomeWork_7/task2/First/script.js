@@ -1,12 +1,18 @@
 'use strict';
 
-function sumNumbers(){
+let sum=0;
+function sumNumbers(a,b){
     if(a%1==0 && b%1==0){
-        let sum =((a+b)*((b-a)+1))/2;
-        return( 'Сумма чисел равна  ' + sum );}
+        if (a < b) {
+            for (let i = a; i<=b; i++ ) {
+                sum += i;}
+        } else if (a>b) {
+            for (let i = a; i>=b; i-- ) {
+                sum += i;}}
+return( 'Сумма чисел равна  ' + sum );}
     else{
         return('Error!Введите натуральное число!')}}
-let a = prompt("Введите число");
-let b = prompt("Введите число");
-console.log(sumNumbers());
+console.log(sumNumbers(+prompt("Введите число"),(+prompt("Введите число"))));
+
+
 

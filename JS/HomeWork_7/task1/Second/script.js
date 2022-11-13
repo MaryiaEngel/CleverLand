@@ -1,12 +1,12 @@
 'use strict';
 
-let r = prompt("Введите значение угла в градусах");
-let degree;
+const r = prompt("Введите значение угла в градусах");
+const degree = function(){
+    console.log(r * 3.14/180);};
+
 if(r >= 0 && r <=360){
-  degree = function(){
-    console.log(r * 3.14/180)};}
+    degree();}
 else{
     console.log("Error, Wrong Input")}
-degree();
 
 
