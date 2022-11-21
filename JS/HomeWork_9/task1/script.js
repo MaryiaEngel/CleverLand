@@ -14,7 +14,10 @@ if (person.middleName == undefined) {
     console.log('Такого значения нет!')} 
 else{
     console.log(person.middleName);}
-console.log(person);
+let amount = 0;
+for (let key in person){
+    amount++;}
+console.log(amount + ' свойств осталось в person');
 
 let number = 0;
 for (let key in person) {
