@@ -21,3 +21,4 @@ for (let key in person) {
     if (typeof person[key] === 'number') {
       number++;}
 console.log(number +' свойств, значениями которых являются числа');}
+

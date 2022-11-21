@@ -24,11 +24,11 @@ for (let key in salary) {
 }
 let salaryAverage = sum/amount;
 console.log('Средняя зарплата равна : ' + salaryAverage);
-salary.salaryAverage = salaryAverage;
+newSalary.salaryAverage = salaryAverage;
 
 let averagePeople = 0;
 for(let key in salary){
-    if(salary[key] > salaryAverage){//когда ставлю знак >=, то выдает в результате 6 человек, что неверно(оно почему-то приравнивает 5000 к результату в 5500). Почему так?
+    if(salary[key] >= salaryAverage){
          averagePeople ++;}}
 console.log(averagePeople + '  работников получают зарплату не меньше средней.')
-salary.averagePeople = averagePeople;
+newSalary.averagePeople = averagePeople;
