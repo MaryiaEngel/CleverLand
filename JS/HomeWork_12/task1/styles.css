@@ -1,0 +1,10 @@
+table{
+    border: 3px solid black;
+    background-color: white;
+    width: 600px;
+    margin: 100px auto;
+    border-collapse: collapse;
+}
+td,th{
+    border: 3px solid black; 
+}
