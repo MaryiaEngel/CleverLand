@@ -35,6 +35,9 @@
   line-height: 27px;
   text-decoration: none;
 }
+.navigation:hover{
+  text-decoration: underline solid #ffffff 2px;
+}
 .single {
   font-style: normal;
   font-size: 48px;
@@ -69,8 +72,12 @@
 }
 .article .article_wrapper .article_item .article_img {
   width: 350px;
-  height: 300px;
-}
+  height: 300px;}
+
+.article .article_wrapper .article_item .article_img:hover{
+  transform: scale(1.1);
+  overflow: hidden;
+  }
 .article .article_wrapper .article_item .purple {
   width: 350px;
   min-height: 90px;
@@ -267,6 +274,10 @@ li{
   line-height: 27px;
   padding-bottom: 20px;
 }
+li:hover{
+  color: #7A66CC;
+  font-weight: 600;
+}
 .track-bottom{
   width: 376px ;
   list-style-type: none;
@@ -296,6 +307,10 @@ li{
   flex-direction: row;
   justify-content: space-between;
 }
+.vegas-box img:hover{
+  transform: scale(1.1);
+  overflow: hidden;
+}
 .inside-box{
   display: flex;
   flex-wrap: wrap;
@@ -322,6 +337,10 @@ li{
   height: 473px;
   display: flex;
   justify-content: space-between;
+}
+.concert-box img:hover{
+  transform: scale(1.1);
+  overflow: hidden; 
 }
 .first,.second,.third{
   background: #2F2B2B;
