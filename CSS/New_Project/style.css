@@ -69,6 +69,7 @@
   width: 350px;
   text-align: center;
   position: relative;
+  overflow: hidden; 
 }
 .article .article_wrapper .article_item .article_img {
   width: 350px;
@@ -76,7 +77,7 @@
 
 .article .article_wrapper .article_item .article_img:hover{
   transform: scale(1.1);
-  overflow: hidden;
+  transition: all 1s;
   }
 .article .article_wrapper .article_item .purple {
   width: 350px;
@@ -315,10 +316,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden; 
 }
 .vegas-box img:hover{
-  transform: scale(1.1);
-  overflow: hidden;
+  transform: scale(1.2);
+  transition: all 1s;
 }
 .inside-box{
   display: flex;
@@ -327,6 +329,7 @@
   width: 540px;
   height: 500px;
   row-gap: 30px ;
+  overflow: hidden; 
 }
 .inside-box .vegas-descr{
   background: url(./img/Rectangle\ 25.png) center / contain no-repeat;
@@ -349,12 +352,13 @@
 }
 .concert-box img:hover{
   transform: scale(1.1);
-  overflow: hidden; 
+  transition: all 1s;
 }
 .first,.second,.third{
   background: #2F2B2B;
   border-radius: 30px 0px;
   width: 350px;
+  overflow: hidden; 
 }
 .first .state,.second .state2,.third .state3{
   color: #FFFFFF;
