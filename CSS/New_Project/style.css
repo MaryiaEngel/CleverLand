@@ -70,10 +70,13 @@
   text-align: center;
   position: relative;
   overflow: hidden; 
+  border-top-left-radius:30px;
+  border-bottom-right-radius:30px;
 }
 .article .article_wrapper .article_item .article_img {
   width: 350px;
-  height: 300px;}
+  height: 300px;
+}
 
 .article .article_wrapper .article_item .article_img:hover{
   transform: scale(1.1);
@@ -316,11 +319,20 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.box-img{
   overflow: hidden; 
+  border-top-left-radius:30px;
+  border-bottom-right-radius:30px;
 }
 .vegas-box img:hover{
   transform: scale(1.2);
   transition: all 1s;
+}
+.vegas_img{
+  overflow: hidden; 
+  border-top-left-radius:30px;
+  border-bottom-right-radius:30px;
 }
 .inside-box{
   display: flex;
@@ -350,7 +362,7 @@
   display: flex;
   justify-content: space-between;
 }
-.concert-box img:hover{
+.concert-img:hover{
   transform: scale(1.1);
   transition: all 1s;
 }
@@ -358,7 +370,7 @@
   background: #2F2B2B;
   border-radius: 30px 0px;
   width: 350px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 .first .state,.second .state2,.third .state3{
   color: #FFFFFF;
@@ -367,7 +379,7 @@
   font-size: 18px;
   line-height: 27px;
   margin-top:30px;
-  margin-left:35px;
+  margin-left:35px; 
 }
 .place,.place2,.place3{
   color: #FFFFFF;
