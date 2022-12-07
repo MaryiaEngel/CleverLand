@@ -255,17 +255,26 @@
   font-style: normal;
   font-size: 14px;
   line-height: 21px;
-  margin-right:20px;
+  padding-right:20px;
+  padding-bottom: 17px;
+}
+.number5{
+  color: #FFFFFF;
+  opacity: 0.5;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  padding-right:20px;
+  padding-bottom: 45px;
 }
 .chosen{
   color: #7A66CC;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  line-height: 27px;
   padding-bottom: 20px;
 }
-li{
+.next_song{
   margin-left: 0px;
   color: #FFFFFF;
   font-style: normal;
@@ -274,7 +283,7 @@ li{
   line-height: 27px;
   padding-bottom: 20px;
 }
-li:hover{
+.next_song:hover{
   color: #7A66CC;
   font-weight: 600;
 }
