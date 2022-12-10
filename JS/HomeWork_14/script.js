@@ -1,22 +1,24 @@
-'use strict';
-
+let timer;
+const r = document.getElementById('result');
 const btn = document.querySelector('.btn');
-btn.addEventListener('click', function() {
-  btn.innerHTML = 'Пауза';
-  let a = Number(document.querySelector('#a').value);
-  let b = Number(document.querySelector('#b').value);
-  let result = document.querySelector('#result');
-  if(b>a){
-	let count = 0;
-	for(let i = a;i<=b;i++){
-		count += i;}
-  result.innerHTML= count;}})
-//btn.addEventListener('click', function() {
-//btn.innerHTML = 'Пуск';})
-//btn.addEventListener('click', function() {
-//	btn.innerHTML =
-//	  (btn.innerHTML === 'Пуск') ? btn.innerHTML = 'Пауза' : btn.innerHTML = 'Пуск';})
+btn.addEventListener('click', () =>
+{
+    btn.innerHTML = 'Пауза';
+    let a = Number(document.querySelector('#a').value);
+    let b = Number(document.querySelector('#b').value);   
+    
+     if (timer)
+    {
+      clearInterval(timer);
+    }
+if(a < b){
+  timer = setInterval(() => {
+    r.innerHTML = parseInt(a++);}, 1000)}
+else{
+    r.innerHTML = "Error";
 
+}
+});
 
 
 
