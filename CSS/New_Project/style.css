@@ -362,6 +362,11 @@
   display: flex;
   justify-content: space-between;
 }
+.concert-img{
+  overflow: hidden;
+  border-top-left-radius:30px;
+  border-bottom-right-radius:30px;
+}
 .concert-img:hover{
   transform: scale(1.1);
   transition: all 1s;
