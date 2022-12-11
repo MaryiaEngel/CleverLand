@@ -7,10 +7,10 @@ let value;
 let firstClick = true;
 
 btn.onclick = () => {
-  if(firstClick) {
-    let a = Number(document.querySelector('#a').value);
-    var b = Number(document.querySelector('#b').value); 
-    value = a;
+  let a = document.querySelector('#a').valueAsNumber;
+  var b = document.querySelector('#b').valueAsNumber;
+  if(firstClick) { 
+    value = a
     firstClick = false;
   }
     if (value < b & btn.innerHTML === "Пуск" ) {
