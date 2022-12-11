@@ -13,16 +13,16 @@ btn.onclick = () => {
     value = a;
     firstClick = false;
   }
-    if (btn.innerHTML === "Пуск") {
-      if(value < b) {
+    if (value < b & btn.innerHTML === "Пуск" ) {
         timer = setInterval(() => {
           if(value == b) {
             clearTimeout(timer);
             btn.innerHTML = "Пуск";
             firstClick = true;
           }
-          r.innerHTML = parseInt(value++);}, 1000);}
-      else if(value > b) {
+          r.innerHTML = parseInt(value++);}, 1000);
+          btn.innerHTML = "Пауза";}
+    else if (value > b & btn.innerHTML === "Пуск") {
         timer = setInterval(() => {
           if(value == b) {
             clearTimeout(timer);
@@ -30,8 +30,7 @@ btn.onclick = () => {
             firstClick = true;
           }
           r.innerHTML = parseInt(value--);}, 1000);
-      }
-    btn.innerHTML = "Пауза";
+          btn.innerHTML = "Пауза";
   }
     else {
         clearTimeout(timer);
