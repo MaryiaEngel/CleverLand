@@ -18,6 +18,7 @@ btn.onclick = () => {
           if(value == b) {
             clearTimeout(timer);
             btn.innerHTML = "Пуск";
+            firstClick = true;
           }
           r.innerHTML = parseInt(value++);}, 1000);
     btn.innerHTML = "Пауза";
