@@ -35,6 +35,9 @@
   line-height: 27px;
   text-decoration: none;
 }
+.navigation:hover{
+  text-decoration: underline solid #ffffff 2px;
+}
 .single {
   font-style: normal;
   font-size: 48px;
@@ -66,11 +69,19 @@
   width: 350px;
   text-align: center;
   position: relative;
+  overflow: hidden; 
+  border-top-left-radius:30px;
+  border-bottom-right-radius:30px;
 }
 .article .article_wrapper .article_item .article_img {
   width: 350px;
   height: 300px;
 }
+
+.article .article_wrapper .article_item .article_img:hover{
+  transform: scale(1.1);
+  transition: all 1s;
+  }
 .article .article_wrapper .article_item .purple {
   width: 350px;
   min-height: 90px;
@@ -248,17 +259,26 @@
   font-style: normal;
   font-size: 14px;
   line-height: 21px;
-  margin-right:20px;
+  padding-right:20px;
+  padding-bottom: 17px;
+}
+.number5{
+  color: #FFFFFF;
+  opacity: 0.5;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  padding-right:20px;
+  padding-bottom: 45px;
 }
 .chosen{
   color: #7A66CC;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  line-height: 27px;
   padding-bottom: 20px;
 }
-li{
+.next_song{
   margin-left: 0px;
   color: #FFFFFF;
   font-style: normal;
@@ -266,6 +286,10 @@ li{
   font-size: 18px;
   line-height: 27px;
   padding-bottom: 20px;
+}
+.next_song:hover{
+  color: #7A66CC;
+  font-weight: 600;
 }
 .track-bottom{
   width: 376px ;
@@ -296,6 +320,20 @@ li{
   flex-direction: row;
   justify-content: space-between;
 }
+.box-img{
+  overflow: hidden; 
+  border-top-left-radius:30px;
+  border-bottom-right-radius:30px;
+}
+.vegas-box img:hover{
+  transform: scale(1.2);
+  transition: all 1s;
+}
+.vegas_img{
+  overflow: hidden; 
+  border-top-left-radius:30px;
+  border-bottom-right-radius:30px;
+}
 .inside-box{
   display: flex;
   flex-wrap: wrap;
@@ -303,6 +341,7 @@ li{
   width: 540px;
   height: 500px;
   row-gap: 30px ;
+  overflow: hidden; 
 }
 .inside-box .vegas-descr{
   background: url(./img/Rectangle\ 25.png) center / contain no-repeat;
@@ -323,10 +362,20 @@ li{
   display: flex;
   justify-content: space-between;
 }
+.concert-img{
+  overflow: hidden;
+  border-top-left-radius:30px;
+  border-bottom-right-radius:30px;
+}
+.concert-img:hover{
+  transform: scale(1.1);
+  transition: all 1s;
+}
 .first,.second,.third{
   background: #2F2B2B;
   border-radius: 30px 0px;
   width: 350px;
+  overflow: hidden;
 }
 .first .state,.second .state2,.third .state3{
   color: #FFFFFF;
@@ -335,7 +384,7 @@ li{
   font-size: 18px;
   line-height: 27px;
   margin-top:30px;
-  margin-left:35px;
+  margin-left:35px; 
 }
 .place,.place2,.place3{
   color: #FFFFFF;
