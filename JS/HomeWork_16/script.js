@@ -1,5 +1,6 @@
 'use strict';
 
+//1
 function Car(make, model) {
     this.make = make;
     this.model = model;
@@ -22,3 +23,28 @@ audi.color();
 mercedes.color();
 
 
+//2
+function greetName (lastname) {
+   console.log(this);
+   console.log(this.name + ' ' + lastname);
+ }
+ const user = {
+   name: 'Maryia',
+ };
+
+greetName.call(user, 'Engel');
+greetName.apply(user, ['Engel']);
+
+
+//3
+const fruit= {
+    fruitName: "Apple"
+  };
+  
+  function add(color) {
+    console.log(color + ' ' + this.fruitName);
+  }
+  
+  const addFruit = add.bind(fruit);
+  
+  addFruit("Green");
