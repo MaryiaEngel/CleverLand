@@ -89,4 +89,17 @@ document.addEventListener("DOMContentLoaded", () => {
   deleteAdv(adv);
   makeChanges();
   createMovieList(movieDB.movies, movieList);
+  let search = document.querySelector(".header__search");
+  search.oninput = function() {
+    let value = this.value;
+    let list = document.querySelectorAll(".promo__interactive-item");
+    if(value) {
+      list.forEach(elem => {
+          if(elem.innerText.search(value) == -1){
+            elem.classList.add('hide'); }
+          });
+      } else{
+        list.forEach(elem => {
+          elem.classList.remove('hide'); })}
+        }
 });
