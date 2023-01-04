@@ -89,17 +89,20 @@ document.addEventListener("DOMContentLoaded", () => {
   deleteAdv(adv);
   makeChanges();
   createMovieList(movieDB.movies, movieList);
-  let search = document.querySelector(".header__search");
-  search.oninput = function() {
-    let value = this.value;
-    let list = document.querySelectorAll(".promo__interactive-item");
-    if(value) {
-      list.forEach(elem => {
-          if(elem.innerText.search(value) == -1){
-            elem.classList.add('hide'); }
-          });
-      } else{
-        list.forEach(elem => {
-          elem.classList.remove('hide'); })}
-        }
-});
+let list = document.querySelectorAll(".promo__interactive-item");
+let searchInput =  document.querySelector(".header__search");
+searchInput.addEventListener('input', (e) => {
+  let value = e.target.value;
+  if(value) {
+    list.forEach(e => {
+      if(e.innerText.search(value) == -1){
+        e.classList.add('hide'); }
+      });
+  } else{
+    list.forEach(e => {
+      e.classList.remove('hide');
+      sortArr(films);
+      })}
+})
+  });
+

@@ -309,5 +309,7 @@
   width: 100%;
   margin-bottom: 10px;
 }
-
+.hide{
+  display: none;
+}
 /*# sourceMappingURL=style.min.css.map */
