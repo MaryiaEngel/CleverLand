@@ -101,7 +101,7 @@ searchInput.addEventListener('input', (e) => {
   } else{
     list.forEach(e => {
       e.classList.remove('hide');
-      sortArr(films);
+      e.innerHTML = e.innerText;
       })}
 })
   });
