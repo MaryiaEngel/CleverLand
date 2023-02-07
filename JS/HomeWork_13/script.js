@@ -12,29 +12,97 @@
 
 5) Добавить нумерацию выведенных фильмов */
 
-'use strict';
+document.addEventListener("DOMContentLoaded", () => {
+  const movieDB = {
+    movies: [
+      "Логан",
+      "Лига справедливости",
+      "Ла-ла лэнд",
+      "Одержимость",
+      "Скотт Пилигрим против...",
+    ],
+  };
+  const adv = document.querySelectorAll(".promo__adv img");
+  const poster = document.querySelector(".promo__bg");
+  const genre = poster.querySelector(".promo__genre");
+  const movieList = document.querySelector(".promo__interactive-list");
+  const addForm = document.querySelector("form.add");
+  const addInput = addForm.querySelector(".adding__input");
+  const checkbox = addForm.querySelector('[type="checkbox"]');
 
-const movieDB = {
-  movies: [
-    'Логан',
-    'Лига справедливости',
-    'Ла-ла лэнд',
-    'Одержимость',
-    'Скотт Пилигрим против...',
-  ],
-};
+  addForm.addEventListener("submit", (event) => {
+    event.preventDefault(); 
 
-const adv = document.querySelectorAll('.promo__adv img');
-const genre = document.querySelector('.promo__genre');
-const bg = document.querySelector('.promo__bg');
-const movie = document.querySelector('.promo__interactive-list');
-adv.forEach((item) => {
-  item.remove();})
-genre.textContent = 'драма';
-bg.style.backgroundImage = "url('img/bg.jpg')";//Почему когда прописываю URL как ('../img/bg.jpg') ничего не работает?
-movie.innerHTML = '';
-movieDB.movies.sort().forEach((film, index) =>{
-  movie.innerHTML += `
-  <li class="promo__interactive-item">${index +1}. ${film}
-     <div class="delete"></div>
-  </li> `;})
+    let newFilm = addInput.value;
+    const favorite = checkbox.checked;
+
+    if (newFilm) {
+      if (newFilm.length > 15) {
+        newFilm = `${newFilm.substring(0, 16)}...`; 
+      }
+      if (favorite) {
+        console.log("Добавили любимый фильм");
+      }
+      movieDB.movies.push(newFilm);
+      sortArr(movieDB.movies);
+      createMovieList(movieDB.movies, movieList);
+    }
+    event.target.reset(); 
+  });
+
+  const deleteAdv = (arr) => {
+    arr.forEach((item) => {
+      item.remove();
+    });
+  };
+
+  const makeChanges = () => {
+    genre.textContent = "драма";
+    poster.style.backgroundImage = 'url("img/bg.jpg")';
+  };
+  const sortArr = (arr) => {
+    arr.sort();
+  };
+
+  function createMovieList(films, parent) {
+    parent.innerHTML = "";
+    sortArr(films);
+
+    films.forEach((film, i) => {
+      parent.innerHTML += `
+    <li class="promo__interactive-item">${i + 1} ${film}
+    <div class="delete"></div>
+    </li>
+    `;
+    });
+
+    document.querySelectorAll(".delete").forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        btn.parentElement.remove();
+        movieDB.movies.splice(i, 1);
+
+        createMovieList(films, parent); 
+      });
+    });
+  }
+
+  deleteAdv(adv);
+  makeChanges();
+  createMovieList(movieDB.movies, movieList);
+let list = document.querySelectorAll(".promo__interactive-item");
+let searchInput =  document.querySelector(".header__search");
+searchInput.addEventListener('input', (e) => {
+  let value = e.target.value;
+  if(value) {
+    list.forEach(e => {
+      if(e.innerText.search(value) == -1){
+        e.classList.add('hide'); }
+      });
+  } else{
+    list.forEach(e => {
+      e.classList.remove('hide');
+      e.innerHTML = e.innerText;
+      })}
+})
+  });
+
